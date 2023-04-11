@@ -1,0 +1,408 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1730,5421" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugade="clr-namespace:UiPath.GSuite.Activities.Drive.Enums;assembly=UiPath.GSuite.Activities" xmlns:ugage="clr-namespace:UiPath.GSuite.Activities.Gmail.Enums;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:upr="clr-namespace:UiPath.Platform.ResourceHandling;assembly=UiPath.Platform" xmlns:usau="clr-namespace:UiPath.Shared.Activities.Utils;assembly=UiPath.GSuite.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Filters</x:String>
+      <x:String>UiPath.GSuite.Activities.Filters</x:String>
+      <x:String>UiPath.GSuite.Gmail.Enums</x:String>
+      <x:String>UiPath.GSuite.Models</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.Shared.Api.Google.Gmail.Models</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Triggers</x:String>
+      <x:String>UiPath.Shared.Activities.ConnectionService.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Mail.Activities.Utils</x:String>
+      <x:String>UiPath.Mail.Activities.Business.HtmlEditor</x:String>
+      <x:String>UiPath.Mail.Activities.Business</x:String>
+      <x:String>UiPath.GSuite.Activities.Gmail.Enums</x:String>
+      <x:String>UiPath.Shared.Activities.Utils</x:String>
+      <x:String>UiPath.Platform.ResourceHandling</x:String>
+      <x:String>System.Text.RegularExpressions</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets</x:String>
+      <x:String>UiPath.GSuite.Contracts</x:String>
+      <x:String>UiPath.GSuite.Activities.Sheets.Enums</x:String>
+      <x:String>UiPath.GSuite.Activities.Drive.Enums</x:String>
+      <x:String>UiPath.GSuite.Drive.Models</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.PDF.Activities</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>System.CodeDom</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Forms</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic.Core</AssemblyReference>
+      <AssemblyReference>System.Text.RegularExpressions</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.Data.SqlClient</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Main Sequence" sap:VirtualizedContainerService.HintSize="1740,5356" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="x:Double" Default="0" Name="ThriventBalance" />
+      <Variable x:TypeArguments="x:String" Name="CoinbaseBalance" />
+      <Variable x:TypeArguments="x:String" Name="HSAPrice" />
+      <Variable x:TypeArguments="x:String" Name="BrokerageAct" />
+      <Variable x:TypeArguments="x:String" Name="AnnuityAct" />
+      <Variable x:TypeArguments="x:String" Name="HSABalance" />
+      <Variable x:TypeArguments="x:String" Name="DOWVal" />
+      <Variable x:TypeArguments="sd:DataTable" Name="finData" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" CloseMode="[NAppCloseMode.Always]" DisplayName="Use Browser Chrome" sap:VirtualizedContainerService.HintSize="1678,5245" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" OpenMode="Always" ScopeGuid="7cc9f847-4785-4035-84d4-a784d87f7fa9" UserDataFolderMode="Automatic" UserDataFolderPath="C:\Users\fdeno\AppData\Local\Google\Chrome\User Data\System Profile" Version="V2" WebDriverMode="Disabled">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence sap:VirtualizedContainerService.HintSize="1644,4988" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Get Current HSA price" sap:VirtualizedContainerService.HintSize="1582,469" sap2010:WorkflowViewState.IdRef="Sequence_2">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGetText DisplayName="Get Text 'Fidelity® ZERO'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" ScrapingOptions="None" TextString="[HSAPrice]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.google.com/finance/quote/FNILX:MUTF?hl=en&amp;window=YTD" CvTextArgument="$14.24" CvType="AnyWordGroup" DesignTimeRectangle="179, 377, 103, 44" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$14.24'" FullSelectorArgument="&lt;webctrl aaname='$14.24' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='DIV' type='' class='YMlKec fxKbKc' /&gt;" Guid="769ff744-abb7-4be7-b099-24c8a1faa3bb" InformativeScreenshot="bca54d1284a5978eea47d3f6151c89e8.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fidelity® ZERO Large Cap Index Fund (FNILX) Mutual Fund Price &amp;amp; News - Google Finance' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Fidelity® ZERO Large Cap Index Fund" CvType="Text" DesignTimeRectangle="179, 318, 396, 34" ElementType="Text" FriendlyName="'Fidelity® ZERO'" FullSelectorArgument="&lt;webctrl aria-role='heading' class='zzDege' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aria-role='heading' class='zzDege' tag='DIV' type='' aaname='Fidelity® ZERO Large Cap Index Fund' check:innerText='Fidelity® ZERO Large Cap Index Fund' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text 'Dow Jones'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_6" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" TextString="[DOWVal]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.google.com/finance/quote/FNILX:MUTF?hl=en&amp;window=YTD" CvElementArea="177, 224, 175, 46" CvTextArea="225, 248, 57, 13" CvTextArgument="33,274.15" CvType="InputBox" DesignTimeRectangle="226, 247, 64, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'33,274.15'" FullSelectorArgument="&lt;webctrl class='YMlKec' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='YMlKec' tag='DIV' type='' /&gt;" Guid="a50966bb-d068-4fae-b455-f195f1613fab" ImageBase64="" InformativeScreenshot="22f6866e3b437caf3f4e78f27d8bc8d9.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Fidelity® ZERO Large Cap Index Fund (FNILX) Mutual Fund Price &amp;amp; News - Google Finance' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvElementArea="177, 224, 175, 46" CvTextArea="225, 232, 63, 12" CvTextArgument="Dow Jones" CvType="InputBox" DesignTimeRectangle="226, 231, 64, 16" ElementType="Text" FriendlyName="'Dow Jones'" FullSelectorArgument="&lt;webctrl aaname='Dow Jones' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Dow Jones' tag='DIV' type='' class='pKBk1e' check:innerText='Dow Jones' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAEQAAAAUCAYAAAA0nZtFAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAMfSURBVFhH7VY9SyNRFN2fEkFIMWARsLAIWAxYCBaBNAsWA1OELZQU24UQCCGNTJEQQbHYkMIwgoSAhAUxhZhGkkJMIaZYTBGYQphiYYrA2fs+xpk8x+gWLlvMgcC8d2fux3nn3pcviLGAmBAFMSEKYkIUxIQoCAiZ2TBWVpGQvzX9G+oDRxo/GbdVHtM4+0fxluAVIdvlLm6uuzjObVGSGvYvXPnCJ+J/JiRIykHbILWkG7ifix13dAJjQ+NErWdL6E3Fvtcv0d4OmhNazEeoaOTnnPlx0dsjH19tPPE334BKyHyKTiGLNdpLpLaQOxrDExY4Zya9a6JSy2Od4iRSuzi+863A00UJGZ5jCpmCjcff0jD9iWImxeMkN8w31b+EEHJ+uhsUOuvCoASSZgNX1zaKOiWjS7IcstG3xT4lNm4gzQop9KmIMerpVaQPx9zfm1ggxMPQYurcQvFsgKtDE8mQUgUhGjIWKfmywXNKmF06PgLF1smPXrJfbOkaiy0P1zjB/WyKXmGTfOTRixD/UkJE8FVUbun5nD1LcghCFRoORmwVFP74Y4dUtYm0VsWQkUjfc6KWYYGQEQ5YkZxQhgmaO0HRvkLaM2aTha5QLFoNLaaMEq5kuJsy2ZjCfR+MEIeMngv32YUnlR/GhxUyrDG5+YkQZBGMLAYefK+FJrWIcWqjsrKJ+pFFp2uiE7iMRpgQUluOnhNVzjTBP137fUKq7Fn9CZv30MI+byXaS2VR7Mp+V/DhGSIUsov2wtzwFULT4iKPhKYRAYxAMTuStBYnpOBXH3XLQvNWalYSItpCKqQ8ELa/VkgenalQgPvswGGKmHtizcThTGg+sZaJPqhXhKi3jBiOzL5khjBMWthm7EsC/HYLCgvBG6DIitZLaFOsgywrxC/yIzMkmpCXGfK9RTkO0LGy2LZG1BqipZMmDVkiaVjLhnws4hUhvtSi/od4d9G3DIe8XZK+1CVBL4QqYL5yejD1j0ehCUe3TO+dWyaSELYzoGEayrH9IL70HugQQ7dM5fK9lonBEROiICZEQUyIgpgQBTEhCwD+AA74OPxEB3zwAAAAAElFTkSuQmCC" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+            <Sequence DisplayName="Get CoinBase Balance" sap:VirtualizedContainerService.HintSize="1582,394" sap2010:WorkflowViewState.IdRef="Sequence_3">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,82" sap2010:WorkflowViewState.IdRef="NGoToUrl_1" Url="https://coinbase.com/home" Version="V3" />
+              <uix:NGetText DisplayName="Get Text 'My balance'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_2" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" TextString="[CoinbaseBalance]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.coinbase.com/home" CvTextArgument="$755.64" CvType="AnyWordGroup" DesignTimeRectangle="280, 248, 119, 42" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$755.64'" FullSelectorArgument="&lt;webctrl parentid='main' tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='H1' type='' class='TextElement__Spacer-hxkcw5-0 cDKLMS Header__StyledHeader-sc-1xiyexz-0 ijrNhl' /&gt;" Guid="514f3cdf-0dc5-49e3-8c90-6ea70fa8fbad" InformativeScreenshot="1ff488e297dc40cfa421ad79f30d6620.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Coinbase' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="My balance" CvType="Text" DesignTimeRectangle="280, 216, 111, 28" ElementType="Text" FriendlyName="'My balance'" FullSelectorArgument="&lt;webctrl parentid='main' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='main' tag='P' type='' class='cds-typographyResets-t1xhpuq2 cds-title3-tkt8qnl cds-foregroundMuted-f1vw1sy6 cds-transition-txjiwsi cds-start-s1muvu8a' aaname='My balance' check:innerText='My balance' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+            <Sequence DisplayName="Get Thrivent Balance" sap:VirtualizedContainerService.HintSize="1582,1658" sap2010:WorkflowViewState.IdRef="Sequence_4">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="1520,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_2" Url="https://thrivent.com" Version="V3" />
+              <uix:NCheckState DisplayName="Check App State 'Log in'" sap:VirtualizedContainerService.HintSize="1520,1024" sap2010:WorkflowViewState.IdRef="NCheckState_1" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Timeout="5" Version="V3">
+                <uix:NCheckState.IfExists>
+                  <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="1016,805" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log in'" sap:VirtualizedContainerService.HintSize="954,158" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.thrivent.com/" CvElementArea="1053, 301, 85, 43" CvTextArea="1073, 315, 44, 17" CvTextArgument="Log in" CvType="Button" DesignTimeRectangle="1055, 303, 82, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl class='button-primary-blue' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='button-primary-blue' tag='A' type='' aaname='Log in' check:innerText='Log in' /&gt;" Guid="4a2531b5-4ec4-4643-8ff2-ad083ca512a2" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAsCAYAAAD/709QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGcSURBVGhD7ZthaoMwFMd7gW03GYxdYIxBoRcshZ6j4CWKV6hXsN/ffNMkNolMG/9rdP8HP9C8qPjzGfMhbpoQAiHaSNJxO0/PL/L69i4fX1v53O7ICNSVOlN3fZcNTiqF3o+68+S2G2o9dgAZjzoMxLJa01GHgdhYRzIdigVBsSAoFgTFgqBYEBQLgmJBUCwIigWBF3sopZYm6lL2sTyIU6UXFbkU8Tya1Yp9NPmILboS66Iuj7d5cx6NqpB9ef3ZHKpIv2Ltftk7j1Ry8o6bizzEelJtNALbPoVcuiYTdX2f2CDsNeYlA7FHOXcl5CQZkVc5H3a2Ot05nOjJYo1I8zBBQ9TjxQ7k+6+6L8nPm7Y+Q2Jd/+7hrFbswA1S7G9kNhSsT2wszE394cfrf4lVJky3NMehYA6sdDfvDEXlxTLEDlY9boKfyjLEKsE43H7Yon0zYDliFwbFgqBYEBQLgmJBUCwIigVBsSAoFkQglguP04kuPOZS+XSiS+X5c0ca6i76c4eiCbVOweNRV+rMk6rc7JD5iDaSJDbyDYhL5Uuv/5rNAAAAAElFTkSuQmCC" InformativeScreenshot="c55862c670a57399caf7ac3dc023fa04.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Thrive With Purpose | Thrivent' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive" />
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NCheckState DisplayName="Check App State 'Log In'" sap:VirtualizedContainerService.HintSize="954,492" sap2010:WorkflowViewState.IdRef="NCheckState_2" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Timeout="3" Version="V3">
+                      <uix:NCheckState.IfExists>
+                        <Sequence DisplayName="Target appears" sap:VirtualizedContainerService.HintSize="450,273" sap2010:WorkflowViewState.IdRef="Sequence_10">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                          <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Version="V3">
+                            <uix:NClick.Target>
+                              <uix:TargetAnchorable BrowserURL="https://identity.webapp.thrivent.com/?spEntityID=https://sso.thrivent.com/oamfed/idp/metadata&amp;service=IAL%20Level%2010&amp;goto=https://iam.thrivent.com:443/am/saml2/continue/metaAlias/alpha/FRTFL?secondVisitUrl%3D/am/SSORedirect/metaAlias/alpha/FRTFL?ReqID%253Did--0xojLZ-HIxi2Lw2UuzO2QmGrFlBHfQbOW5CSYPc&amp;AMAuthCookie=" CvElementArea="858, 680, 347, 52" CvTextArea="1005, 698, 54, 18" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="861, 683, 343, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log In'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='sc-jqUVSM cNbnvu primary' aaname='Log In' check:innerText='Log In' /&gt;" Guid="d7e913de-8ab7-41d1-824a-019d51b8466c" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVsAAAA0CAYAAAAkGpvWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVHhe7doxSiRBGIbhvd+CoafwBouRRzAx8BaygZkXWNADbGK48YBhbdfSf9nTU8N2z1SNM/B88KCM3Y2BvBSN35KZmXWf2JqZnWA7sX15S+nmPqWr25S+/wBgqdzN3M/c0fm2YvvwlNL1Xf0hACyTO5p7Ol2JbS6x0AK0kXs6PeGW2Oajb+0GAA6TuxorsfWOFqCt3NVYiW3tQgCOExNbgI5iYgvQUUxsATqKiS1ARzGxBegoJrYAHcXEFqCjmNgCdBQTW4COYmIL0FFMbAE6ioktQEcxsaW5x9/jH9XH8H3l56f2Pv46rz/rP4eeYmJLc2ILn2JiS3NiC59iYktza2P7/Ge8ftxmuL923evwvFi+ptw3fK1dH+ax3fr9fo3fjxNkWouJLc2tie00oFubBXQe5K0dGts9e57dD8eIiS3NLY3tNHrlRDl83YyfvQ+nziWfHRPb8rzJCbd8Bg3ExJbmlsY2TrXz1wY7rwcihLPnNXmNULlObGkpJrY0tza287iV+8eI7nve/Lp9xJavFBNbmlsb2/+dbPc9z8mWSxATW5pbGtty3bAveWcrtpxATGxpbhrR6iaRi8DtbBbQ2n8jbIbn/JvYcsZiYktza2KbzUO65P9scxC9RuASxMSW8zd5ZTAN8b53vnBOYmLLRZieaucr73vhDMXElotRC67Qcu5iYgvQUUxsATqKiS1ARzGxBegoJrYAHcXEFqCjmNgCdBQTW4COYmIL0FFMbAE6ipXYXt3WLwTgMLmrsRLbm/v6xQAcJnc1VmL78pbS9V39BgDWyT3NXY2V2OY9PAkuwLFyR3NPp9uKbV4ucT76eocLsE7uZu7n9EQb24mtmZm1n9iamXVfSn8BIYfQG5lxIoAAAAAASUVORK5CYII=" InformativeScreenshot="3528df01be73122559715cb16550db48.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://identity.webapp.thrivent.com/?spEntityID=https://sso.thrivent.com/oamfed/idp/metadata&amp;amp;service=IAL Level 10&amp;amp;goto=https://iam.thrivent.com:443/am/saml2/continue/metaAlias/alpha/FRTFL?secondVisitUrl%3D/am/SSORedirect/metaAlias/alpha/FRTFL?ReqID%253Did--0xojLZ-HIxi2Lw2UuzO2QmGrFlBHfQbOW5CSYPc&amp;amp;AMAuthCookie=' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                                <uix:TargetAnchorable.Anchors>
+                                  <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                                    <uix:Target CvTextArgument="Forgot your username or password?" CvType="Text" DesignTimeRectangle="861, 635, 343, 24" FriendlyName="'Forgot yourusername'" FullSelectorArgument="&lt;webctrl class='wrapper-link' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='wrapper-link' parentid='__next' tag='DIV' type='' aaname='Forgot your or?' check:innerText='Forgot yourusername orpassword?' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                                  </scg:List>
+                                </uix:TargetAnchorable.Anchors>
+                              </uix:TargetAnchorable>
+                            </uix:NClick.Target>
+                          </uix:NClick>
+                        </Sequence>
+                      </uix:NCheckState.IfExists>
+                      <uix:NCheckState.IfNotExists>
+                        <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,106" sap2010:WorkflowViewState.IdRef="Sequence_11">
+                          <sap:WorkflowViewStateService.ViewState>
+                            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                            </scg:Dictionary>
+                          </sap:WorkflowViewStateService.ViewState>
+                        </Sequence>
+                      </uix:NCheckState.IfNotExists>
+                      <uix:NCheckState.Target>
+                        <uix:TargetAnchorable BrowserURL="https://identity.webapp.thrivent.com/?spEntityID=https://sso.thrivent.com/oamfed/idp/metadata&amp;service=IAL%20Level%2010&amp;goto=https://iam.thrivent.com:443/am/saml2/continue/metaAlias/alpha/FRTFL?secondVisitUrl%3D/am/SSORedirect/metaAlias/alpha/FRTFL?ReqID%253Did--0xojLZ-HIxi2Lw2UuzO2QmGrFlBHfQbOW5CSYPc&amp;AMAuthCookie=" CvElementArea="858, 680, 347, 52" CvTextArea="1005, 698, 54, 19" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="861, 683, 343, 48" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log In'" FullSelectorArgument="&lt;webctrl tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='BUTTON' type='submit' class='sc-jqUVSM cNbnvu primary' aaname='Log In' check:innerText='Log In' /&gt;" Guid="f2e5a3ab-bf8a-45d6-85b5-8522e938b8f1" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAVsAAAA0CAYAAAAkGpvWAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKOSURBVHhe7doxSiRBGIbhvd+CoafwBouRRzAx8BaygZkXWNADbGK48YBhbdfSf9nTU8N2z1SNM/B88KCM3Y2BvBSN35KZmXWf2JqZnWA7sX15S+nmPqWr25S+/wBgqdzN3M/c0fm2YvvwlNL1Xf0hACyTO5p7Ol2JbS6x0AK0kXs6PeGW2Oajb+0GAA6TuxorsfWOFqCt3NVYiW3tQgCOExNbgI5iYgvQUUxsATqKiS1ARzGxBegoJrYAHcXEFqCjmNgCdBQTW4COYmIL0FFMbAE6ioktQEcxsaW5x9/jH9XH8H3l56f2Pv46rz/rP4eeYmJLc2ILn2JiS3NiC59iYktza2P7/Ge8ftxmuL923evwvFi+ptw3fK1dH+ax3fr9fo3fjxNkWouJLc2tie00oFubBXQe5K0dGts9e57dD8eIiS3NLY3tNHrlRDl83YyfvQ+nziWfHRPb8rzJCbd8Bg3ExJbmlsY2TrXz1wY7rwcihLPnNXmNULlObGkpJrY0tza287iV+8eI7nve/Lp9xJavFBNbmlsb2/+dbPc9z8mWSxATW5pbGtty3bAveWcrtpxATGxpbhrR6iaRi8DtbBbQ2n8jbIbn/JvYcsZiYktza2KbzUO65P9scxC9RuASxMSW8zd5ZTAN8b53vnBOYmLLRZieaucr73vhDMXElotRC67Qcu5iYgvQUUxsATqKiS1ARzGxBegoJrYAHcXEFqCjmNgCdBQTW4COYmIL0FFMbAE6ipXYXt3WLwTgMLmrsRLbm/v6xQAcJnc1VmL78pbS9V39BgDWyT3NXY2V2OY9PAkuwLFyR3NPp9uKbV4ucT76eocLsE7uZu7n9EQb24mtmZm1n9iamXVfSn8BIYfQG5lxIoAAAAAASUVORK5CYII=" InformativeScreenshot="4d1810131f302364b446aa3bd4531d5f.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='https://identity.webapp.thrivent.com/?spEntityID=https://sso.thrivent.com/oamfed/idp/metadata&amp;amp;service=IAL Level 10&amp;amp;goto=https://iam.thrivent.com:443/am/saml2/continue/metaAlias/alpha/FRTFL?secondVisitUrl%3D/am/SSORedirect/metaAlias/alpha/FRTFL?ReqID%253Did--0xojLZ-HIxi2Lw2UuzO2QmGrFlBHfQbOW5CSYPc&amp;amp;AMAuthCookie=' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Forgot your username or password?" CvType="Text" DesignTimeRectangle="861, 635, 343, 24" FriendlyName="'Forgot yourusername'" FullSelectorArgument="&lt;webctrl class='wrapper-link' parentid='__next' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl class='wrapper-link' parentid='__next' tag='DIV' type='' aaname='Forgot your or?' check:innerText='Forgot yourusername orpassword?' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NCheckState.Target>
+                    </uix:NCheckState>
+                  </Sequence>
+                </uix:NCheckState.IfExists>
+                <uix:NCheckState.IfNotExists>
+                  <Sequence DisplayName="Target does not appear" sap:VirtualizedContainerService.HintSize="450,396" sap2010:WorkflowViewState.IdRef="Sequence_8">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Account Overview'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Version="V3">
+                      <uix:NClick.Target>
+                        <uix:TargetAnchorable BrowserURL="https://www.thrivent.com/" CvTextArgument="Account Overview" CvType="Text" DesignTimeRectangle="1235, 139, 113, 16" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Account Overview'" FullSelectorArgument="&lt;webctrl aaname='Account Overview' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Account Overview' tag='A' type='' class='Link ' check:innerText='Account Overview' /&gt;" Guid="bde2fd23-148c-451e-b0d9-fb90bc0c01f8" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAHUAAAAUCAYAAACzrHJDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAKISURBVGhD7VbbbcMwDOzKQdYxsok9hj1BP/rlEVRRlKzjw3aMNm1ViMEhNknxdVSQtyih49/BVXa0DVfZ0TZcZUfbcJUdbcNTDmEOUdYx3F37XwPVu4bx5tkQuS+Qdbo7fj8BrmV+eLYvwyrv0xrCMr8y6TfjCVIfTKck8R7G2Go7y/s0tIIbJTKHJTa8DMqeSd9EDvPIVgbLIm0m122MHsUnkzbh+TkMyVfePn8Jj24F95vIFjkL1MKIHmRM6mGeKAbJGt4/4peaH18Y0uma8oIV2RYN6sMYYhEpVplHwvbASI1lh9SAcLY6fD+16eHU93NSyV02Wv3V4DV0XRpkT7HtAKstP2MctQSpB7SbvByfiURSbV6cR12E6mvy4OzgIUEOVydzmt5w3Ya5niEVb4Xc1mNS7WYrwCJrX6qL6+YesAYCDtz0oOvGC4M2XBxxNvdkzsVPzFXiUl5VF77Y4djh2cYY122HA/klUm1eWYMru6RKHfaLPSW9K04d+VbSGV42ssGtZdSX/eBloLUQPMe4bsMmX0mq/RlUEDcFflWE/qg/hkdqza1veo0ne/FBsammjUyaD52hb52zPuz9fLKei93zqX5XbDiEl5J6SIitrcQe8yD3/DRcUkvu9AcKFwtqOls6AvkssaYVZzLHP48xqu0rP4ghKmBSXQCeO7VBfPWeBgln04A2uyXlGqkRKZ8mhYkytyTVzSIGpntQRPukll6iiDzYU64Dz7qzJCm6fAZ9KvghJdbNbeACSvFMQBUzbBA7lCKahFIky/xAos5IrYM7ukklDorvvz8w3R+e3yPVXyjdk65N57bE6xkAjKKjfbjKjrbhKjvahqvsaBuusqNZvIVPY+fD/78Jl9oAAAAASUVORK5CYII=" InformativeScreenshot="6d5e539f3fdf57f2f4af987311ed7942.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Thrive With Purpose | Thrivent' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                          <uix:TargetAnchorable.Anchors>
+                            <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                              <uix:Target CvTextArgument="Claims" CvType="Text" DesignTimeRectangle="1167, 139, 43, 16" ElementType="Text" FriendlyName="'Claims'" FullSelectorArgument="&lt;webctrl aaname='Claims' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Claims' tag='A' type='' class='Link ' check:innerText='Claims' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAC8AAAAUCAYAAAAdmmTCAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAEuSURBVEhL1ZXhDYQwCIVd2biOcRMdo47hCFxLi6X0eTm9+AOSlxQK16+I3hCNHAsGvQgGvQgGvQgGvQgEl0CtBZrV/rQdRMdKk4pd6U7uA7WBeb+ApYPWUfnvAd2RcrjjLbiIL7XPvLbw+cLKSp7N5XXc0/lhkeYUU7XDuMaWVTu2qe5lVUcDfpMG4hr9FMrIJSibK5DNXjI5k2HlCc+xjTW391mymGhN5/S366SB+v32kA5e1zWwSZkh10JYK1n8B392sdjv8HpMNbz5TTwR1XkyNvUAgbjb+Wv4U+rrZ5prk/ALiyHQYS/AF3X1ejMpfwnaC3ARBLKjln2cexfezrw9i3UuTglsNXAZgWCAamEpFyjj9xw+yv5Z9iPdON4Eg14Eg14Eg14Egw400AdPJZdUwsoZVgAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                            </scg:List>
+                          </uix:TargetAnchorable.Anchors>
+                        </uix:TargetAnchorable>
+                      </uix:NClick.Target>
+                    </uix:NClick>
+                    <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_4" Url="https://myservice.thrivent.com/portal/mythrivent/home/summary" Version="V3" />
+                  </Sequence>
+                </uix:NCheckState.IfNotExists>
+                <uix:NCheckState.Target>
+                  <uix:TargetAnchorable BrowserURL="https://www.thrivent.com/" DesignTimeRectangle="1055, 258, 82, 40" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'Log in'" FullSelectorArgument="&lt;webctrl class='button-primary-blue' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl class='button-primary-blue' tag='A' type='' aaname='Log in' check:innerText='Log in' /&gt;" Guid="b8b5d0dc-bace-4bad-862e-cc9c9450c9e6" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFYAAAAsCAYAAAD/709QAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGcSURBVGhD7ZthaoMwFMd7gW03GYxdYIxBoRcshZ6j4CWKV6hXsN/ffNMkNolMG/9rdP8HP9C8qPjzGfMhbpoQAiHaSNJxO0/PL/L69i4fX1v53O7ICNSVOlN3fZcNTiqF3o+68+S2G2o9dgAZjzoMxLJa01GHgdhYRzIdigVBsSAoFgTFgqBYEBQLgmJBUCwIigWBF3sopZYm6lL2sTyIU6UXFbkU8Tya1Yp9NPmILboS66Iuj7d5cx6NqpB9ef3ZHKpIv2Ltftk7j1Ry8o6bizzEelJtNALbPoVcuiYTdX2f2CDsNeYlA7FHOXcl5CQZkVc5H3a2Ot05nOjJYo1I8zBBQ9TjxQ7k+6+6L8nPm7Y+Q2Jd/+7hrFbswA1S7G9kNhSsT2wszE394cfrf4lVJky3NMehYA6sdDfvDEXlxTLEDlY9boKfyjLEKsE43H7Yon0zYDliFwbFgqBYEBQLgmJBUCwIigVBsSAoFkQglguP04kuPOZS+XSiS+X5c0ca6i76c4eiCbVOweNRV+rMk6rc7JD5iDaSJDbyDYhL5Uuv/5rNAAAAAElFTkSuQmCC" InformativeScreenshot="9e8130879e1a74f60e6a20db6934a210.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Thrive With Purpose | Thrivent' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target DesignTimeRectangle="1153, 258, 201, 40" ElementType="Text" FriendlyName="'Find a Financial Advisor'" FullSelectorArgument="&lt;webctrl aaname='Find a Financial Advisor' class='button-primary-blue' tag='A' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Find a Financial Advisor' class='button-primary-blue' tag='A' type='' check:innerText='Find a Financial Advisor' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAM0AAAAsCAYAAADGpDxOAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAOtSURBVHhe7Z0xctwwDEXdps8BcoBMmhwi90iR0+QkKXZyiRR7Azeu03smaRVAy8+FQFAS1pJm7XzMvPEuCYIgiK91pwexgRCSIhwkhPS5fnn3/vPw4cvP4ePXv8OnbwMh/zWqA9WD6sLqRLgKhmIhpEV14YRz+aCKihYQQoZRH41o+CtDSB/VRyOayJEQcoWiISQJRUNIEoqGkCQUDSFJKBpCklA0hCShaAhJQtEQkoSiISTJ/qL5MQzPQ8d+X3xO8lft6Zdbm+D748tjVA7KeWueLikNp2DOg3o9y99oHuCcamepS+QzQeqhthQX3GMdl7gL0WzB0aJ57awVDYSotkoISdG8Ro4TzR+5qGhe8E+b+l0Kb5t38gS1jS2xT6UJ5kRjG0Ct67tTzmjUaia+bWKbp3+6+xh23v/SrN0P6z3VR842Vw+b78mKBnWU9dXf1Tb6pfH35GuANTA73+QstuoXMsFdi6YxGccaX1hYTwhn2T+y8F+ZPXIuzeQNTds0OMzk0PNBU0xEs3K/OdGgZhrffo58vCEu5r2QMe/ruHRPvTpjfVMjide7w1s5TjSB4QK6DegbrhSgFsYUBMXuicbTa4KRHXKusQHmi39zJpMDGgaiQA6+ASei8XT264oG+5d8Qn/EFPNNDT+s86Lo1dGLbEJQkzW9sTV3LRorgLEhSiGieX85PbAWtrVoejljrIkt63Q8aspJA2HdTDOEoknsZ2nmg/3DGHL+yRjW6b72c/H3dUPMakv7CbZOS+faguNEM3PZ2QaM5lEsO2bxTzj/fcIOOfsn/Zon/4tEc8N+FuwdGc4Yxij7ROc4F39bo6hudhw23lMQW7F1omhMIW0DojA2JhrGF38kyAH+R4nGz9czyLj9HjUbfjmaM8rf0UoMzKv/LftVELdnJYb1Q47I2catexeDrxLVzTLJE/ciVmMgh1Ln2XNtxKsUTf0eWFh8U2xvR4umMRlX3+iyvWh888Fwhkg0jc3sB7C2mTN19CLx5tfW+yr7A1+33r3ijL1zYT1F02nAccxcoFr002+ZNJxenPiphcXdKWfbENoES/9WeNEoXjjNfmLwz+7n40QPFMSI9lXDPfi4UX164zaeWm8NzOb5NkRDyBuDoiEkCUVDSBKKhpAkFA0hSSgaQpJQNIQkoWgISULREJKEoiEkCUVDSBKKhpAkjWj4UidC+oQvdeLrAwnpE74+kC+qJSRGdRG+qFbRCVUUxUPIileiE0JWEw4SQkIehn8LNaHAoY792gAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NCheckState.Target>
+              </uix:NCheckState>
+              <uix:NGetText DisplayName="Get Text 'Brokerage'" sap:VirtualizedContainerService.HintSize="1520,158" sap2010:WorkflowViewState.IdRef="NGetText_3" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" TextString="[BrokerageAct]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://myservice.thrivent.com/portal/mythrivent/home/summary/!ut/p/z1/hY67DoJAEEW_hYKWGdgViR1uFDAIEgtxGwMGAcMrywq_L1Er42O6O_ecyQCHGHiTDGWeyLJtkmrKR26e3H1gGast1XHNGEa7kFDPjAiiAYd_AJ9q_DI2Tj5_IMyxXTr3ES3qIHp0GQYui3T0yAv4cWMDPK_a9Pmu3aTEyoGL7JKJTGg3Ma0LKbt-oaKK4zhqshDlkDVSO7e1ip-kou0lxO8sdHWM11k1-Lai3AHTEZO8/dz/d5/L2dBISEvZ0FBIS9nQSEh/" CvTextArgument="$528,623.37" CvType="AnyWordGroup" DesignTimeRectangle="584, 160, 251, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$528,623.37'" FullSelectorArgument="&lt;webctrl class='app-heading-1' parentid='pageBody' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='app-heading-1' parentid='pageBody' tag='P' type='' /&gt;" Guid="56cb0ac0-139c-48d7-a476-581bd64d24ae" InformativeScreenshot="34fa776a9ef29d9b641dcfc5adc6ff25.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MyThrivent' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Brokerage" CvType="Text" DesignTimeRectangle="208, 165, 376, 27" ElementType="Text" FriendlyName="'Brokerage'" FullSelectorArgument="&lt;webctrl tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H3' type='' class='app-heading-2' aaname='Brokerage' check:innerText='Brokerage' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+              <uix:NGetText DisplayName="Get Text 'Annuities'" sap:VirtualizedContainerService.HintSize="1520,158" sap2010:WorkflowViewState.IdRef="NGetText_4" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" TextString="[AnnuityAct]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://myservice.thrivent.com/portal/mythrivent/home/summary/!ut/p/z1/hY67DoJAEEW_hYKWGdgViR1uFDAIEgtxGwMGAcMrywq_L1Er42O6O_ecyQCHGHiTDGWeyLJtkmrKR26e3H1gGast1XHNGEa7kFDPjAiiAYd_AJ9q_DI2Tj5_IMyxXTr3ES3qIHp0GQYui3T0yAv4cWMDPK_a9Pmu3aTEyoGL7JKJTGg3Ma0LKbt-oaKK4zhqshDlkDVSO7e1ip-kou0lxO8sdHWM11k1-Lai3AHTEZO8/dz/d5/L2dBISEvZ0FBIS9nQSEh/" CvTextArgument="$35,899.85" CvType="AnyWordGroup" DesignTimeRectangle="584, 576, 251, 48" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$35,899.85'" FullSelectorArgument="&lt;webctrl class='app-heading-1' idx='2' parentid='pageBody' tag='P' /&gt;" FuzzySelectorArgument="&lt;webctrl class='app-heading-1' type='' parentid='pageBody' tag='P' /&gt;" Guid="1195cec0-cb5e-41c9-af85-c29795202ef8" InformativeScreenshot="11890ff6772f5655b21b75d1a35a53ca.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='MyThrivent' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Annuities" CvType="Text" DesignTimeRectangle="208, 580, 376, 27" ElementType="Text" FriendlyName="'Annuities'" FullSelectorArgument="&lt;webctrl idx='2' tag='H3' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' tag='H3' class='app-heading-2' aaname='Annuities' check:innerText='Annuities' /&gt;" ImageBase64="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" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+            <Sequence DisplayName="Get HSA Balance" sap:VirtualizedContainerService.HintSize="1582,594" sap2010:WorkflowViewState.IdRef="Sequence_6">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NGoToUrl DisplayName="Go To URL" sap:VirtualizedContainerService.HintSize="388,83" sap2010:WorkflowViewState.IdRef="NGoToUrl_3" Url="https://digital.fidelity.com/prgw/digital/login/full-page?AuthRedUrl=digital.fidelity.com/ftgw/digital/portfolio/summary" Version="V3" />
+              <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'Log In'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" Version="V3">
+                <uix:NClick.Target>
+                  <uix:TargetAnchorable BrowserURL="https://digital.fidelity.com/prgw/digital/login/full-page" CvElementArea="418, 499, 82, 41" CvTextArea="436, 512, 47, 19" CvTextArgument="Log In" CvType="Button" DesignTimeRectangle="420, 501, 79, 38" DesignTimeScaleFactor="1" ElementType="Button" FriendlyName="'Log In'" FullSelectorArgument="&lt;webctrl id='fs-login-button' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl id='fs-login-button' tag='BUTTON' type='submit' class='btn-action' aaname='Log In' check:innerText='Log In' /&gt;" Guid="4a3d4de6-e84b-46e6-9b80-35717bd8c3a4" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFMAAAAqCAYAAADPn2cJAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAKASURBVGhD7Zq/SxxBFIBN6T9gaWlvcYKYNOm0uiZodY0QLMTmBEGw8K5IiIonqCRoIUgSOcHLiUgCJiSQgwNTW5zFNVdYWZwgWj3nzd2us7vz9kd2zvX0Pfh4vJ3Z29tvZ2an2B7gMBYs02A4ZE7O5aF3YBhe9A8yAaAn9KWGLRMbht5MwYe9E9g8qjIBoCf0pQq1ZaLp/O53KHyrQKEkEHm19Jdrnxp9oTcrbJk4dN8Xfwv+aLIFt7szerPCITP3+Sfkvghk/kVkbldrUub8zg8mIqTM7NYxzCpwHVyTMqc3D5mIkDLfrpWYiJAyM0tFyCwLZN7nOkRNyhx/9xUmBJzDZ1JmenEX0jkB59CZlDm6sANjClwH16TM13PbTERImSPZj/Ay+ylWXj+/BbhuwHrI/kZzuQFXcAv/yiH7G8ikzNTMRmwKtRsps6Bp6zgHDWjCDZweaNo6BMs0SPIy5U2rcQllTT/5W9rQ9/fIrF6KvqKuOq/XrFW85/4nycqUNwhQr94fa0lzjShLhH3sDOriiK8It0zroan/p31MvX4cEpRJCylfiIaLM0ft7hf4oLQyXQ9J4L5WHJKTSdycBEeich4p008Cy2wjp7WyFhLT3Hd6PiuZEaZ5aqYCp9fyr9kRuM49L5mCkC+gwCmt40nK1IUqWN6kGpqtjqePFcS2CHlqMs3QmuLe5aA99Q2JMMHjlylHlM9G3m8ZeWC6YGRSb+7WyDS14TZBF8hEWkKd4V3/kqZLZHYHLNMgLNMgLNMgLNMgLNMgWpn40ebg1Ir2BEYP+tJ+7IqfE/e9mmChIUFP6Ev7GTYGNqBpHLqMP+hJFYnhkMkRL1imsQC4A5N8vO4JgZ2fAAAAAElFTkSuQmCC" InformativeScreenshot="30a470df0eed660f9e3ef65d6b73c9ff.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Login' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvType="InputBox" DesignTimeRectangle="324, 439, 272, 38" ElementType="InputBoxPassword" FriendlyName="'INPUT password'" FullSelectorArgument="&lt;webctrl id='password' tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl id='password' tag='INPUT' type='password' class='' aaname='Password' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAARQAAAAqCAYAAAByd6QQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAEnQAABJ0Ad5mH3gAAAFtSURBVHhe7dahbsJQGIbh3t/MsqvBIUhvYQo5QYJAUIfeDXADOJicQO+MH9YOkqbZwt+ZPV/ymFNOgumbVsXMLGmCYmZpuwnKumlKXddlOp0CDIpWRDOu1wUlHiyWq7I7HMvb+wfAoGhFNOM6Kl1QojZiAvxGNCPa0a4LSnzC9F0AGBLtaCcowF0EBUgjKEAaQQHSCAqQRlCANIICpBEUII2gAGkEBUgjKEAaQQHSCAqQRlCANIICpBkvKJtZqarqZFaar7Pt/Oly9vhStuez1zI5/6Yqk81f3APGNFpQnh8vL3x4mO9PZ98RCBGC7oUP55d+P+q9vv8J5PGFAqQZLyjAvyMoQBpBAdIICpBGUIA0ggKkERQgjaAAaQQFSCMoQBpBAdIICpBGUIA0vUGp67rsDsfeCwB9ohnRjnZdUNZNUxbLlagAPxKtiGZEO9p1QYnFg6hNfMIADIlWXMckdhMUM7N7JihmlrRSPgFpB3Emc7zOVwAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image, CV" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NClick.Target>
+              </uix:NClick>
+              <uix:NGetText DisplayName="Get Text 'Health Savings'" sap:VirtualizedContainerService.HintSize="388,158" sap2010:WorkflowViewState.IdRef="NGetText_5" ScopeIdentifier="7cc9f847-4785-4035-84d4-a784d87f7fa9" TextString="[HSABalance]" Version="V3">
+                <uix:NGetText.Target>
+                  <uix:TargetAnchorable BrowserURL="https://digital.fidelity.com/ftgw/digital/portfolio/summary" CvTextArgument="$8,212.51" CvType="AnyWordGroup" DesignTimeRectangle="235, 613, 72, 24" DesignTimeScaleFactor="1" ElementType="Text" FriendlyName="'$8,212.51'" FullSelectorArgument="&lt;webctrl aaname=' $8,212.51 ' parentid='236907347' tag='SPAN' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='236907347' tag='SPAN' type='' class='' /&gt;" Guid="0be93226-d60b-4325-a2ae-7a1e8166a052" InformativeScreenshot="c9cdf289db7c7d52dfbbb3b5e0f5c5bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Portfolio Summary' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                    <uix:TargetAnchorable.Anchors>
+                      <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                        <uix:Target CvTextArgument="Health Savings" CvType="Text" DesignTimeRectangle="23, 618, 110, 18" ElementType="Text" FriendlyName="'Health Savings'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                      </scg:List>
+                    </uix:TargetAnchorable.Anchors>
+                  </uix:TargetAnchorable>
+                </uix:NGetText.Target>
+              </uix:NGetText>
+            </Sequence>
+            <Assign sap:VirtualizedContainerService.HintSize="1582,84" sap2010:WorkflowViewState.IdRef="Assign_1">
+              <Assign.To>
+                <OutArgument x:TypeArguments="x:Double">[ThriventBalance]</OutArgument>
+              </Assign.To>
+              <Assign.Value>
+                <InArgument x:TypeArguments="x:Double" xml:space="preserve">[Convert.ToDouble(System.Text.RegularExpressions.Regex.Match(BrokerageAct.ToString, "(?&lt;=\$)?[\d,.]+").Value) +
+Convert.ToDouble(System.Text.RegularExpressions.Regex.Match(AnnuityAct.ToString, "(?&lt;=\$)?[\d,.]+").Value)]</InArgument>
+              </Assign.Value>
+            </Assign>
+            <Sequence DisplayName="Send Email Update" sap:VirtualizedContainerService.HintSize="1582,549" sap2010:WorkflowViewState.IdRef="Sequence_9">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uga:SendEmailConnections ArgumentAttachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ReplyTo="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="UseExisting" Body="[&quot;DOW = &quot; + DOWVal + &#xA;&quot;Coinbase Balance = &quot; +  CoinbaseBalance.ToString + &#xA;&quot; HSA Balance = &quot; + HSABalance.ToString  + &quot; at index price = &quot; + HSAPrice.ToString  +&#xA;&quot;Thrivent Brokerage account = &quot; + BrokerageAct.ToString  + &quot; Annuity account = &quot; + AnnuityAct.ToString  +&#xA;&quot; Thrivent total: $&quot; + ThriventBalance.ToString]" ConnectionId="002ba78e-ab71-489b-aa31-decedeb74cd0" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="388,434" sap2010:WorkflowViewState.IdRef="SendEmailConnections_2" Importance="Normal" SaveAsDraft="False" Subject="[&quot;financials for &quot; + Now.ToString]" To="[New String(){&quot;frank.deno@gmail.com&quot;}]" UseConnectionService="True">
+                <uga:SendEmailConnections.Attachments>
+                  <InArgument x:TypeArguments="scg:IEnumerable(upr:IResource)" />
+                </uga:SendEmailConnections.Attachments>
+                <uga:SendEmailConnections.AttachmentsBackup>
+                  <usau:BackupSlot x:TypeArguments="ugage:AttachmentInputMode" StoredValue="UseExisting">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:Dictionary x:TypeArguments="ugage:AttachmentInputMode, scg:List(x:Object)" />
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </uga:SendEmailConnections.AttachmentsBackup>
+              </uga:SendEmailConnections>
+            </Sequence>
+            <Sequence DisplayName="Append to Spreadsheet" sap:VirtualizedContainerService.HintSize="1582,885" sap2010:WorkflowViewState.IdRef="Sequence_13">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <ui:BuildDataTable DataTable="[finData]" DisplayName="Build Data Table" sap:VirtualizedContainerService.HintSize="388,60" sap2010:WorkflowViewState.IdRef="BuildDataTable_1" TableInfo="&lt;NewDataSet&gt;&#xA;  &lt;xs:schema id=&quot;NewDataSet&quot; xmlns=&quot;&quot; xmlns:xs=&quot;http://www.w3.org/2001/XMLSchema&quot; xmlns:msdata=&quot;urn:schemas-microsoft-com:xml-msdata&quot;&gt;&#xA;    &lt;xs:element name=&quot;NewDataSet&quot; msdata:IsDataSet=&quot;true&quot; msdata:MainDataTable=&quot;TableName&quot; msdata:UseCurrentLocale=&quot;true&quot;&gt;&#xA;      &lt;xs:complexType&gt;&#xA;        &lt;xs:choice minOccurs=&quot;0&quot; maxOccurs=&quot;unbounded&quot;&gt;&#xA;          &lt;xs:element name=&quot;TableName&quot;&gt;&#xA;            &lt;xs:complexType&gt;&#xA;              &lt;xs:sequence&gt;&#xA;                &lt;xs:element name=&quot;Date&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Dow_x0020_Index&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Coinbase_x0020_Balance&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;HSA_x0020_Balance&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;FNILX_x0020_Pric&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Thrivent_x0020_Brokerage_x0020_Acct&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Thrivent_x0020_Annuity_x0020_Acct&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;                &lt;xs:element name=&quot;Thrivent_x0020_Total&quot; msdata:Caption=&quot;&quot; type=&quot;xs:string&quot; minOccurs=&quot;0&quot; /&gt;&#xA;              &lt;/xs:sequence&gt;&#xA;            &lt;/xs:complexType&gt;&#xA;          &lt;/xs:element&gt;&#xA;        &lt;/xs:choice&gt;&#xA;      &lt;/xs:complexType&gt;&#xA;    &lt;/xs:element&gt;&#xA;  &lt;/xs:schema&gt;&#xA;&lt;/NewDataSet&gt;">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+              </ui:BuildDataTable>
+              <ui:AddDataRow DataRow="{x:Null}" ArrayRow="[{Now.ToString, DOWVal.ToString, CoinbaseBalance.ToString, HSABalance.ToString, HSAPrice.ToString, BrokerageAct.ToString, AnnuityAct.ToString, ThriventBalance.ToString}]" DataTable="[finData]" DisplayName="Add Data Row" sap:VirtualizedContainerService.HintSize="388,189" sap2010:WorkflowViewState.IdRef="AddDataRow_3" />
+              <uga:WriteRangeConnections ConnectionAccountName="{x:Null}" ManualEntrySpreadsheetId="{x:Null}" RangeNameOrAddress="{x:Null}" SheetName="{x:Null}" Spreadsheet="{x:Null}" TemplateBrowserItemFriendlyName="{x:Null}" TemplateBrowserItemId="{x:Null}" BrowserItemFriendlyName="Daily Update" BrowserItemId="https://docs.google.com/spreadsheets/d/1ZD7z2RoklWMGFTrEW07EiyrTkPzF1UoCbwfbIDesZFM/edit?usp=drivesdk" ConnectionId="487bb0ff-5d28-48dc-9109-600341f88069" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="388,441" sap2010:WorkflowViewState.IdRef="WriteRangeConnections_1" IncludeHeaders="False" ItemSelectionMode="Browse" Range="Sheet1" RangeSheetName="Sheet1" RangeType="Default" Source="[finData]" UseConnectionService="True" WorkingWithTemplateSpreadsheet="False" WriteMode="[UiPath.GSuite.Activities.Sheets.Enums.RangeWriteMode.Append]">
+                <uga:WriteRangeConnections.FileIdBackup>
+                  <usau:BackupSlot x:TypeArguments="ugade:EDriveItemMode" StoredValue="Browse">
+                    <usau:BackupSlot.BackupValues>
+                      <scg:Dictionary x:TypeArguments="ugade:EDriveItemMode, scg:List(x:Object)" />
+                    </usau:BackupSlot.BackupValues>
+                  </usau:BackupSlot>
+                </uga:WriteRangeConnections.FileIdBackup>
+              </uga:WriteRangeConnections>
+            </Sequence>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="156, 23, 1399, 804" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="b0f2797bb7e2d037ca2aea91a0102d68.jpg" Selector="&lt;html app='chrome.exe' url='https://www.google.com/finance/quote/FNILX:MUTF?hl=en&amp;amp;window=YTD' /&gt;" Title="Inbox - frank.deno@gmail.com - Gmail" Url="https://www.google.com/finance/quote/FNILX:MUTF?hl=en&amp;window=YTD" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
