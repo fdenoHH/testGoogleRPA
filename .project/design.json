@@ -6,5 +6,7 @@
     {
       "Key": "gsheets"
     }
-  ]
+  ],
+  "SeparateRuntimeDependencies": true,
+  "IncludeSources": true
 }
